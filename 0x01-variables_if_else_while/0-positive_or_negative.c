@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/* main - assigns a random number to int n every time
+* it executes, and prints it
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
     int n;
@@ -10,12 +13,9 @@ int main(void)
     n = rand() - RAND_MAX / 2;
     if (n < 0)
         printf(n, " is negative\n");
-    else
-        if (n = 0)
-            printf(n, " is zero\n");
-    else
-        if (n > 0)
-            printf(n, " is positive\n");
-    
+    else if (n = 0)
+        printf(n, " is zero\n");
+    else if (n > 0)
+        printf(n, " is positive\n");
     return (0);
 }
